@@ -11,7 +11,10 @@ public class TransfersApplication {
 //        definiujemy obiekt w oparciu o klase Loan i zadanymi wartosciami i wyswietlamy jego parametry
         Loan mBank = new Loan("01",new BigDecimal(1000));
 
+        Loan Raiffeisen = new Loan("02", new BigDecimal(12000));
+
         mBank.print();
+        Raiffeisen.print();
 
     }
 }

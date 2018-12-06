@@ -7,4 +7,5 @@ public class SplataKredytu {
 
 
     //public void splacKredyt(BigDecimal kwotaRaty)
+
 }
