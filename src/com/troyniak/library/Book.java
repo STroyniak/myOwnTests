@@ -7,20 +7,15 @@ public class Book {
     private String titleBook;                          // tytuł książki
     private String autor;                          // autor lub autorzy książki
     private int dateRelease;                       // data wydania książki - tylko rok
-    private int isbn;                              // numer ISBN książki
+    private String isbn;                              // numer ISBN książki
     private Boolean statusLoan = false;            // status wypożyczenia - true/false wypożyczona/nie wypożyczona
     private Boolean statusReservation = false;     // status rezerwacji - true/false zarezerwowana/nie zarezerwowana
 
 // konstruktor
 
-    public Book(int idBook, String titleBook, String autor, int dateRelease, int isbn, Boolean statusLoan, Boolean statusReservation) {
+//    wykomentoowany z uwagi na settery
+    public Book(int idBook) {
         this.idBook = idBook;
-        this.titleBook = titleBook;
-        this.autor = autor;
-        this.dateRelease = dateRelease;
-        this.isbn = isbn;
-        this.statusLoan = statusLoan;
-        this.statusReservation = statusReservation;
     }
 
 //gettery
@@ -33,7 +28,7 @@ public class Book {
         return titleBook;
     }
 
-    public String getAutor() {
+    public String getAuthor() {
         return autor;
     }
 
@@ -41,7 +36,7 @@ public class Book {
         return dateRelease;
     }
 
-    public int getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
@@ -53,7 +48,23 @@ public class Book {
         return statusReservation;
     }
 
-// settery tylko dla pól true/false które będą zmieniane w trakcie pracy programu
+// brak settera dla id - raz ustawione juz niezmienne
+
+    public void setTitleBook(String titleBook) {
+        this.titleBook = titleBook;
+    }
+
+    public void setAuthor(String autor) {
+        this.autor = autor;
+    }
+
+    public void setDateRelease(int dateRelease) {
+        this.dateRelease = dateRelease;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
 
     public void setStatusLoan(Boolean statusLoan) {
         this.statusLoan = statusLoan;
@@ -61,6 +72,19 @@ public class Book {
 
     public void setStatusReservation(Boolean statusReservation) {
         this.statusReservation = statusReservation;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "idBook=" + idBook +
+                ", titleBook='" + titleBook + '\'' +
+                ", autor='" + autor + '\'' +
+                ", dateRelease=" + dateRelease +
+                ", isbn=" + isbn +
+                ", statusLoan=" + statusLoan +
+                ", statusReservation=" + statusReservation +
+                '}';
     }
 
     // wyświetla info o książce
