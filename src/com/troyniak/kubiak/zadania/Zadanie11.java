@@ -6,9 +6,7 @@ public class Zadanie11 {
 
     public static void main(String[] args) {
         Scanner czytacz = new Scanner(System.in);
-        double a;
-        double b;
-        double pole;
+        double a, b, pole;
 
         System.out.println("Podaj dlugosc pierwszego boku prostokata; ");
         a = czytacz.nextDouble();
@@ -21,6 +19,6 @@ public class Zadanie11 {
 
         System.out.println("Pole prostokata o wprowadzonych dlugosciach bokow wynosi: "+ '\n' + pole);*/
         pole = Zadanie11a.obliczPole(a,b);
-        System.out.println("Pole wynosi:" + pole);
+        System.out.println("Pole prostokata wynosi:" + pole + " jednostek.");
     }
 }
