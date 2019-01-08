@@ -3,7 +3,6 @@ package com.troyniak.codewars;
 public class Maskify {
 
     public static String maskify(String str) {
-        //throw new UnsupportedOperationException("Unimplemented");
 
         int dlugStr = str.length();
         int inxMiddle = dlugStr - 4;
@@ -13,9 +12,8 @@ public class Maskify {
             String dozmianyStr = str.substring(0, inxMiddle);
             String bezzmianyStr = str.substring(inxMiddle, inxEnd);
 
-            dozmianyStr = dozmianyStr.replaceAll("[a-zA-Z0-9 ]", "#");
+            dozmianyStr = dozmianyStr.replaceAll(".", "#");
 
-//            String wynik = dozmianyStr + bezzmianyStr;
             return dozmianyStr + bezzmianyStr;
         } else {
             return str;

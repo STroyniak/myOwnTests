@@ -23,7 +23,7 @@ public class App {
             System.out.println("Wynik operacji to: " + str);
         }*/
 
-        System.out.println("EvenOrOdd");
+ /*   *//*    System.out.println("EvenOrOdd");
         EvenOrOdd test = new EvenOrOdd();
         test.even_or_odd(3);
         System.out.println("**************************");
@@ -51,8 +51,31 @@ public class App {
 
         System.out.println("ExesAndOhs");
         ExesAndOhs exesandOhs = new ExesAndOhs();
-        exesandOhs.XO("xxoo");
+        exesandOhs.XO("ooxXm");
+        System.out.println("**************************");*//*
+
+*//*        System.out.println("ShortestWord");
+        ShortestWord shortestWord = new ShortestWord();
+        shortestWord.findShort("Why so serious son");
+        System.out.println("**************************");*//*
+
+        System.out.println("ReturnNegative");
+        ReturnNegative returnNegative = new ReturnNegative();
+        returnNegative.makeNegative(0);
         System.out.println("**************************");
+
+
+
+        System.out.println("DupaWKrate".replaceAll(".", "#"));*/
+        System.out.println("DuplicateEncoder");
+        DuplicateEncoder duplicateEncoder = new DuplicateEncoder();
+        duplicateEncoder.encode("Prespecialized");
+        System.out.println("**************************");
+
+
+
+
+
 
 
 
